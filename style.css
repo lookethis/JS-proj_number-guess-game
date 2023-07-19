@@ -1,0 +1,148 @@
+body {
+  margin: 200px auto;
+  background-image: url(image/soju2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body::before {
+  content: "";
+  opacity: 10%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: white;
+  pointer-events: none;
+}
+
+main {
+  margin: 0 auto;
+  width: 90vw;
+  border: 10px solid rgb(251, 252, 246);
+  border-radius: 5%;
+  background-color: rgb(240, 248, 255, 0.7);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title h1 {
+  margin-bottom: 0px;
+  font-size: 70px;
+  color: rgb(9, 146, 121);
+}
+
+.title h2 {
+  margin-top: 15px;
+  font-size: 40px;
+  color: rgb(220, 61, 87);
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+img {
+  width: 250px;
+}
+
+.result h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: rgb(190, 9, 9);
+}
+
+.result h4 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.input {
+  display: flex;
+  height: 45px;
+}
+
+.input input {
+  width: 230px;
+  margin-right: 20px;
+}
+
+button {
+  border-radius: 4px;
+}
+
+#play-button {
+  font-weight: 700;
+  width: 45px;
+  border: 2px solid rgb(49, 185, 138);
+  background-color: rgb(174, 245, 175);
+  color: rgb(71, 18, 27);
+}
+
+#reset-button {
+  margin: 30px;
+  height: 65px;
+  width: 90px;
+  border: 0px;
+  border-radius: 23%;
+  background-color: rgb(174, 245, 175);
+  font-size: 17px;
+  color: rgb(2, 131, 71);
+  font-weight: 700;
+}
+
+@media screen and (min-width: 786px) {
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  section:nth-child(2) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .title h1 {
+    margin-top: 0;
+    font-size: 40px;
+  }
+
+  .title h2 {
+    margin-bottom: 0;
+    font-size: 30px;
+  }
+
+  .input {
+    height: 35px;
+  }
+
+  .result {
+    margin-bottom: 15px;
+  }
+
+  #reset-button {
+    margin-top: 20px;
+    height: 45px;
+    width: 70px;
+    border: 0px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}

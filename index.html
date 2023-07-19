@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Serif+KR:wght@700&family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>number-guess-game3</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main3.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="title">
+          <h1>숫자 맞추기 게임!</h1>
+          <h2>UP & DOWN</h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="result">
+          <h3 id="result-area">잡히기 전에 맞춰라!!</h3>
+          <h4 id="chance-area">남은 기회: 5</h4>
+        </div>
+        <div class="input">
+          <input
+            type="number"
+            placeholder="1부터 100까지의 숫자를 적어주세요"
+            id="user-input"
+          />
+          <button id="play-button">GO!</button>
+        </div>
+        <button id="reset-button">RESET!</button>
+      </section>
+    </main>
+  </body>
+</html>
